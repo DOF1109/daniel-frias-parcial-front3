@@ -1,7 +1,13 @@
-const Card = () => {
-  return (
-    <div>Hola, soy una tarjeta</div>
-  )
-}
+import "./Card.css"
 
-export default Card
+const Card = ({ name, book }) => {
+  return (
+    <div className="card">
+      <p>Hola {name}!</p>
+      <p>Sabemos que tu libro favorito es:</p>
+      <p className="book">{book}</p>
+    </div>
+  );
+};
+
+export default Card;
